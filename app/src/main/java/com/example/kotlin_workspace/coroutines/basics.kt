@@ -1,10 +1,14 @@
-package com.example.kotlin_workspace.coroutines_basic
+package com.example.kotlin_workspace.coroutines
 
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay // suspending function
-import kotlinx.coroutines.job
 import kotlinx.coroutines.launch // coroutine builder
 import kotlinx.coroutines.runBlocking // Set the coroutine scope
+
+/**
+ * runBlocking은 테스트나 main 함수에서 코루틴을 동기식으로 실행하고 싶을 때만 쓰는 도구입니다.
+ * 일반 앱/서비스 로직에서는 CoroutineScope, lifecycleScope, viewModelScope 같은 비블로킹 스코프를 사용해야 해요.
+ */
 
 fun main() = runBlocking {
     doName("yejin")
@@ -19,6 +23,7 @@ fun main() = runBlocking {
         delay(5000L)
         println("haha..")
     }
+    job1.cancel()
     job2.join() // launch 되자마자 시작하지만, 여기까지는 완료를 보장함
     println("Hello") // 3 - job2 끝날 때까지 대기 (원래라면, doWorld() 끝나면 다른 launch들과 동시에 시작)
     repeat(3) {
