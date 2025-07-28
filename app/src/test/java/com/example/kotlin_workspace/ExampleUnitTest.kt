@@ -1,4 +1,4 @@
-package com.example.practice
+package com.example.kotlin_workspace
 
 import org.junit.Test
 

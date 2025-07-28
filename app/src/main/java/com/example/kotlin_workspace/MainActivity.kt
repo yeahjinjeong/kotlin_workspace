@@ -1,4 +1,4 @@
-package com.example.practice
+package com.example.kotlin_workspace
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

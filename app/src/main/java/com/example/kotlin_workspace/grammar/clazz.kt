@@ -1,4 +1,4 @@
-package com.example.practice
+package com.example.kotlin_workspace.grammar
 
 fun main() {
     val human = Human("Harry")

@@ -1,4 +1,4 @@
-package com.example.practice
+package com.example.kotlin_workspace
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -1,4 +1,4 @@
-package com.example.practice
+package com.example.kotlin_workspace.grammar
 
 /**
  * 모든 함수는 Expression (식)

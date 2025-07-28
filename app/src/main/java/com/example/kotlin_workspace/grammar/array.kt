@@ -1,4 +1,4 @@
-package com.example.practice
+package com.example.kotlin_workspace.grammar
 
 fun main() {
     val array = arrayOf(1, 2, 3) // Array<Int>
